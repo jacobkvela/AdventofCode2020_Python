@@ -1,0 +1,28 @@
+#Solution to Day 1: Problem 1
+
+file = open ("input.txt", "r")
+exp = []
+for line in file:
+    exp.append(int(line))
+
+for x in exp:
+    for y in exp:
+        if x + y == 2020:
+            print(x*y)
+
+#Answer: 567171
+
+#Solution to Day 1: Problem 2
+
+file = open ("input.txt", "r")
+exp = []
+for line in file:
+    exp.append(int(line))
+
+for x in exp:
+    for y in exp:
+        for z in exp:
+            if x + y + z == 2020:
+                print(x*y*z) 
+                
+#Answer: 212428694
